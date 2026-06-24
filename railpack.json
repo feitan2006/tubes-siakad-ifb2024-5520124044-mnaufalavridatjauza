@@ -4,7 +4,8 @@
   },
   "build": {
     "commands": [
-      "composer install --optimize-autoloader --no-scripts --no-interaction --ignore-platform-reqs"
+      "composer install --optimize-autoloader --no-scripts --no-interaction --ignore-platform-reqs",
+      "cp /app/public/build/.vite/manifest.json /app/public/build/manifest.json"
     ]
   }
 }
