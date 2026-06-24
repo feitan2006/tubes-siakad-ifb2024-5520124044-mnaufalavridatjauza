@@ -82,4 +82,8 @@ Route::get('/keluar', function () {
     return redirect('/login');
 })->middleware('auth')->name('keluar');
 
+Route::get('/', function () {
+    return redirect('/login');
+});
+
 require __DIR__.'/auth.php';
