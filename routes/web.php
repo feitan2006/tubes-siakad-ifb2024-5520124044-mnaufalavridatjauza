@@ -75,11 +75,11 @@ Route::middleware('auth')->group(function () {
 });
 
 // Logout
-Route::get('/logout', function () {
+Route::get('/keluar', function () {
     Auth::logout();
     request()->session()->invalidate();
     request()->session()->regenerateToken();
     return redirect('/login');
-})->middleware('auth')->name('logout');
+})->middleware('auth')->name('keluar');
 
 require __DIR__.'/auth.php';

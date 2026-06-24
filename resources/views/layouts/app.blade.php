@@ -62,7 +62,7 @@
                     <p class="text-white text-sm font-medium">{{ auth()->user()->name }}</p>
                     <p style="color: #C9A84C;" class="text-xs uppercase tracking-widest">{{ auth()->user()->role }}</p>
                 </div>
-                <a href="{{ route('logout') }}"
+                <a href="{{ route('keluar') }}"
                     style="border: 1px solid #C9A84C; color: #C9A84C;"
                     class="hover:bg-yellow-800 hover:bg-opacity-30 text-sm font-medium px-4 py-2 rounded transition tracking-wide">
                     Logout
